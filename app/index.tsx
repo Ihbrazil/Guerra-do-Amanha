@@ -1,8 +1,6 @@
 import React from 'react';
 import { Image, StyleSheet, Text, View } from 'react-native';
 
-import Capa from '@/assets/images/capa.png';
-
 export default function Index() {
   return (
     <View style={ estilos.container }>
@@ -10,7 +8,7 @@ export default function Index() {
       <Text style={ estilos.descricao }>Gêneros: Ação e ficção</Text>
 
       <Image
-        source={ Capa }
+        source={require('@/assets/images/capa.png')}
         style={ estilos.img }
       />
 
